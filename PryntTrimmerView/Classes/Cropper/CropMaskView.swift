@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CropMaskView: UIView {
+public class CropMaskView: UIView {
 
     let cropBoxView = UIView()
     let frameView = UIView()
@@ -51,7 +51,7 @@ class CropMaskView: UIView {
         cropBoxView.topAnchor.constraint(equalTo: topAnchor).isActive = true
     }
 
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
 
         let path = UIBezierPath(rect: bounds)
